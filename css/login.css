@@ -1,0 +1,290 @@
+body{
+    background: #f2f2f2;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+/* 头部 */
+#header{
+    height: 67px;
+    background: #333;
+}
+.header-inner{
+    height: 67px;
+    background: #333;
+}
+/* 头部logo */
+.logo{
+    width: 260px;
+    height: 67px;
+    background: url('../images/login-logo.jpg') no-repeat;
+}
+.logo a{
+    display: block;
+    width: 260px;
+    height: 67px;
+    text-indent: -9999px;
+}
+/* 主体部分 */
+/* 切换 */
+.tab{
+    height: 36px;
+    line-height: 36px;
+    margin-top: 30px;
+}
+.tab>a{
+    float: left;
+    width: 146px;
+    height: 36px;
+    background: #ccc;
+    margin-right: 12px;
+}
+.tab>a.activ{
+    background: #b40707;
+}
+.tab>a i.phone-ico{
+    float: left;
+    width: 14px;
+    height: 22px;
+    background: url('../images/reg-img01.png') no-repeat 0 -17px;
+    margin: 7px 18px 7px 26px;
+}
+.tab>a i.mail-ico{
+    float: left;
+    width: 22px;
+    height: 17px;
+    background: url('../images/reg-img01.png') no-repeat;
+    margin: 9px 12px 9px 16px;
+}
+.tab>a span{
+    float: left;
+    color: #fff;
+    font-size: 14px;
+}
+.tab>p{
+    float: right;
+}
+.tab>p a{
+    color: #007dff;
+}
+.tab>p a:hover{
+    color: #0064CC;
+}
+/* 信息填写 */
+.info{
+    background: #ffff;
+    padding: 38px 0;
+}
+.info ul{
+    width: 424px;
+    margin: 0 auto;
+}
+.info ul li{
+    height: 42px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.info ul li.verify-btn{
+    width: 424px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px  solid #ccc;
+    border-radius: 21px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    background: #f7f7f7;
+}
+.info ul li.space{
+    height: 10px;
+    background: #fff;
+}
+.info ul li label{
+    color: #333;
+    float: left;
+    width: 122px;
+    height: 41px;
+    line-height: 41px;
+    text-align: justify;
+    border: 1px solid #ccc;
+    border-radius: 21px 0 0 21px;
+    padding: 0 16px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+.info ul li label:after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+}
+.info ul li div.sel-nation{
+    float: left;
+    width: 302px;
+    height:41px;
+    line-height: 41px;
+    padding: 0 20px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 21px 21px 0;
+    box-sizing: border-box;
+}
+/* 国家列表 */
+.nation-list{
+    position: absolute;
+    top: 42px;
+    left: 122px;
+    width: 286px;
+    height: 186px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #999;
+    z-index: 10;
+    display: none;
+}
+.info ol.nation-list li{
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 15px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #333;
+}
+.info ol.nation-list li:hover{
+    background: #cce5ff;
+}
+.sel-nation i{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background: url('../images/triangle_green.png') no-repeat;
+}
+.tele label i{
+    float: right;
+    width: 12px;
+    height: 6px;
+    background: url('../images/triangle_gray.png') no-repeat;
+    margin-top: 16px;
+}
+.tele label span{
+    float: left;
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.info ul li input{
+    float: left;
+    width: 302px;
+    height:41px;
+    line-height: 41px;
+    padding: 0 20px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 21px 21px 0;
+    box-sizing: border-box;
+}
+.info ul li.verify input{
+    padding-right: 100px;
+}
+/* 获取验证码按钮 */
+.verify button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #007DFF;
+    width: 86px;
+    height: 22px;
+    line-height: 22px;
+    border: 0;
+    padding: 0;
+    background: #f7f7f7;
+    outline: none;
+}
+.login-btn a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #b40707;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 20px auto 0;
+}
+/* 密码验证 */
+.verify-pwd{
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    width: 284px;
+    height: 154px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #666;
+    background: #fff;
+    margin: auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: none;
+}
+.verify-pwd h3{
+    color: #333;
+    margin-bottom: 10px;
+}
+.verify-pwd p{
+    color: #7f7f7f;
+    line-height: 18px;
+}
+.verify-pwd div{
+    margin-top: 20px;
+    color: #b40707;
+}
+.verify-pwd p i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('../images/verify-pwd.jpg') no-repeat -1px 0;
+    margin: 0 4px;
+}
+.verify-pwd b{
+    position: absolute;
+    bottom: -8px;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom: 0;
+    border-top-color: #fff;
+}
+/* 底部 */
+.footer-inner{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.footer-inner p{
+    text-align: center;
+    color: #999;
+    line-height: 24px;
+}
+.footer-inner p a{
+    padding: 0 5px;
+    color: #999;
+}
+.footer-inner p b{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #999;
+}
+.footer-inner p.line{
+    height: 1px;
+    background: #d7d7d7;
+    margin: 30px 0;
+}
