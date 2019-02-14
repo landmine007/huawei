@@ -22,7 +22,6 @@ var shop=(function(){
                 allset_meal[i].repertory = i;
             }
             this.event();
-            // this.show();
         },
         event(){
             var self =this;
@@ -65,7 +64,6 @@ var shop=(function(){
             var target = e.target||e.srcElement;
             if(target.nodeName === 'LI') {
                 repertory = target.repertory;
-                self.show();
                 for(let i = 0; i < allset_meal.length; i++) {
                     allset_meal[i].classList.remove('current');
                 }
@@ -89,16 +87,15 @@ var shop=(function(){
             obj.count = Number($count.value)
             obj.price = obj.count * ($show_price[1].innerHTML)
         }
-        self.setData(obj);                         
+        self.setData(obj);
     }
-
         },
         setData(obj){
             var shopList = localStorage.getItem('shopList') || '[]';
             shopList = JSON.parse(shopList);
             for(var i = 0; i < shopList.length; i++) {
                 var item = shopList[i];
-                if(item.configure == obj.configure) {
+                if(item.configure == obj.configure && item.color == obj.color) {
                     item.count += obj.count;
                     break;
                 } 

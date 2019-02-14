@@ -1,0 +1,209 @@
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+html,body{
+    width: 100%;
+    background: #eee;
+}
+#header_wrapper{
+	background-color: #333333;
+    height: 67px;
+}
+.header{
+    height: 67px;
+    border: 0px;
+    position: relative;
+	background-color: #333333;
+}
+.logo{
+    position: static;
+    left: 2px;
+    float: left;
+    width: 143px;
+    margin-right: 20px;    
+}
+.logo img{
+	margin-left: 4px;
+    margin-top: 17px;
+}
+.website-name{
+	color: white;
+    font-size: 20px;
+    height: 67px;
+    line-height: 50px;
+    font-family: "arial";
+}
+.website-name b:first-of-type{
+	font-size: 18px;
+    margin-top: 9px;
+    float: left;
+    color: #cccccc;
+}
+.website-name b:last-of-type{
+	font-size: 18px;
+    margin-top: 11px;
+    float: left;
+    margin-left: 18px;
+}
+#header_nav_wrapper{
+	height: 40px;
+	background: #f9f9f9;
+}
+.header_nav{
+	height: 40px;
+	background: #f9f9f9;
+}
+
+.nav_l{
+	float: left;
+}
+.nav_l li{
+	position: relative;
+	float: left;
+	line-height: 40px;
+	padding: 0 8px;
+}
+.nav_l li:first-child{
+	padding: 0 8px 0 0;
+}
+.nav_l li a{
+	margin: auto;
+}
+.nav_r{
+	float: right;
+	margin-right: -18px;
+}
+.nav_r li{
+	position: relative;
+	float: left;
+	padding: 0 8px;
+	line-height: 40px;
+}
+.xiajiantou{
+	width: 10px;
+	height: 5px;
+	margin-left: 8px;
+	position: relative;
+	top: 18px;
+}
+.nav_r li>div{
+	padding: 0 10px 0 12px;
+	background: #f2f2f2;
+}
+.nav_r li>div:hover{
+	color:#ca151d;
+	background: #fff;
+}
+.nav_r li div:hover a{
+	color:#ca151d;
+}
+.gouwuche{
+	width: 17px;
+	height: 16px;
+	margin-right: 8px;
+	position: relative;
+	top: -2px;
+}
+#gouwuche{
+	position: relative;
+}
+.gwc{
+	display: none;
+	position: absolute;
+	width: 460px;
+	padding: 50px 0;
+	width: 460px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 0 0 10px 10px;
+    color: #a4a4a4;
+    left: -362px;
+    background: #fff;
+    z-index: 99;
+}
+.gwc span{
+	background: url(../images/icon-header.png) no-repeat;
+	width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    background-position: 0 -166px;
+}
+.after:after{
+	position: absolute;
+	top: 0;
+	right: 0;
+	content: '|';
+	font-size: 10px;
+	height: 10px;
+	width: 1px;
+	color: #d3d3d3;
+}
+.header_buttom{
+	height:70px;
+	background: #fff;
+}
+.layout{
+width:1200px;
+margin:0 auto;
+height:70px;
+}
+.left{
+    height:70px;
+}
+.left img{
+    margin-top:15px;
+}
+.left span{
+    display: inline-block;
+    font-size:22px;
+    margin-left:22px;
+    line-height: 36px; 
+    margin-top:15px;
+}
+.list_top{
+	height:40px;
+	margin-top:15px;
+    background: #fff;
+}
+.list_top ul{
+    height:40px;
+}
+.list_top ul li{
+    float:left;
+    width:100px;
+    line-height: 40px;
+    margin-left:30px;
+    text-align: center;
+    color:#a4a4a4;
+}
+.list_top ul li:nth-of-type(1){
+    width:450px;
+    margin-left: 0;
+}
+.list_main{
+    height:500px;
+}
+.list_main ul{
+height:100px;
+margin:15px auto;
+background: #fff;
+}
+.list_main ul li{
+	height:100px;
+	float:left;
+	width:100px;
+	margin-left:30px;
+	line-height: 100px;
+	text-align: center;
+}
+.list_main ul li:nth-of-type(1){
+    width:450px;
+    margin-left:0;
+}
+.shop_count{
+	width:100px;
+	height:100px;
+	}
