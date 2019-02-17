@@ -19,16 +19,16 @@
             </h1>
         </div>
     </div>
-    <!-- 主体内容:信息填写-->
+    <!-- 主体内容 -->
     <div id="main">
         <div class="main-inner container">
             <!-- 切换按钮 -->
             <div class="tab">
-                <a href="login-phone.html" class="activ">
+                <a href="login-phone.html">
                     <i class="phone-ico"></i>
                     <span>手机号</span>
                 </a>
-                <a href="login-mail.html">
+                <a href="login-mail.html" class="activ">
                     <i class="mail-ico"></i>
                     <span>电子邮箱</span>
                 </a>
@@ -249,11 +249,11 @@
                             </ol>
                         </div>
                     </div>
-                    <!-- 手机号 -->
+                    <!-- 邮件地址 -->
                     <div class="box">
-                        <div class="phone">
-                            <label>+86(中国)</label>
-                            <input type="text" name="phone" placeholder="请输入手机号">
+                        <div class="main">
+                            <label>邮件地址</label>
+                            <input type="text" name="main" placeholder="请输入邮件地址">
                         </div>
                         <p class="hint"></p>
                     </div>
@@ -270,11 +270,11 @@
                             <span class="verify-btn">点击按钮进行验证</span>
                         </div>
                     </div>
-                    <!-- 短信验证码 -->
+                    <!-- 邮件验证码 -->
                     <div class="box">
                         <div class="verify-code">
-                            <label>短信验证码</label>
-                            <input type="text" placeholder="请输入短信验证码">
+                            <label>邮件验证码</label>
+                            <input type="text" placeholder="请输入邮件验证码">
                             <a href="javascript:;">获取验证码</a>
                         </div>
                         <p class="hint"></p>
@@ -284,7 +284,7 @@
     
                     <!-- 密码 -->
                     <div class="box">
-                        <div calss="pwd">
+                        <div class="pwd">
                             <label>密码</label>
                             <input type="password" name="password" placeholder="请输入密码">
                             <div class="verify-pwd">
@@ -309,9 +309,28 @@
                     </div>
                     <!-- 再次输入密码 -->
                     <div class="box">
-                        <div calss="pwd-again">
+                        <div class="pwd-again">
                             <label>确认密码</label>
                             <input type="password" placeholder="请再次输入密码">
+                        </div>
+                        <p class="hint"></p>
+                    </div>
+                    <!-- 间隙 -->
+                    <div class="space"></div>
+                    <!-- 手机号 -->
+                    <div class="box">
+                        <div class="phone">
+                            <label>+86(中国)</label>
+                            <input type="text" name="phone" placeholder="请输入手机号">
+                        </div>
+                        <p class="hint"></p>
+                    </div>
+                    <!-- 短信验证码 -->
+                    <div class="box">
+                        <div class="verify-code">
+                            <label>短信验证码</label>
+                            <input type="text" placeholder="请输入短信验证码">
+                            <a href="javascript:;">获取验证码</a>
                         </div>
                         <p class="hint"></p>
                     </div>
@@ -334,11 +353,6 @@
             <p>Copyright &copy; 2011-2018 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9</p>
         </div>
     </div>
-    <script src='js/jquery-1.11.3.js'></script>
-    <script src='js/login.js'></script>
-    <script>
-        login.init();
-    </script>
 </body>
 
 </html>

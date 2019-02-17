@@ -94,7 +94,6 @@ body{
 .info .box>div{
     width: 424px;
     height: 42px;
-    margin-bottom: 10px;
     position: relative;
     border: 1px solid #ccc;
     border-radius: 21px;
@@ -122,6 +121,11 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.hint{
+    line-height: 22px;
+    margin-left: 10px;
+    color: red;
 }
 /* 填写框 */
 .info .box input{
@@ -180,6 +184,17 @@ body{
     height: 42px;
     position: relative;
 }
+.verify h2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    background: url(../images/sprite.1.0.3.png) no-repeat 0 -161px;
+}
 .verify div p.blue{
     position: absolute;
     top: 0;
@@ -209,6 +224,7 @@ body{
 .verify{
     background: linear-gradient(#f1f1f1, #fefefe);
     line-height: 42px;
+    cursor: pointer;
 }
 .verify:hover{
     background: linear-gradient(#fefefe, #f1f1f1);
