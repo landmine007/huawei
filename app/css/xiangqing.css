@@ -213,4 +213,18 @@ top:50px;
     line-height: 46px;
     text-align: center;
 }
+.btn{
+    margin-top:20px;
+    margin-left:10px;
+    height:30px;
+    line-height:20px;
+}
+.btn a{
+    background:blue;
+    display: block;
+    width:100px;
+    color:#fff;
+    line-height:30px;
+
+}
  
