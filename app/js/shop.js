@@ -105,7 +105,6 @@ var shop=(function(){
             }
             localStorage.shopList = JSON.stringify(shopList); 
         }
-}
-            
+}           
 }())
 shop.init();
