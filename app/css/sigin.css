@@ -236,7 +236,7 @@ body{
     color: #666;
 }
 /* 获取短信验证码 */
-.verify-code a{
+.verify-code a, .mail-code a{
     position: absolute;
     right: 12px;
     top: 1px;

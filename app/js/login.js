@@ -6,6 +6,11 @@ var login = (function(){
     var $verify = $('.verify');
     var $pwd = $('.pwd input');
     var $pwdAgain = $('.pwd-again input');
+    var $vCode = $('.verify-code input');
+    var $mail = $('.mail input');
+    var $mailCode = $('.mail-code input');
+    var $subPhone = $('.subPhone');
+    var $subMail = $('.subMail');
     var timer = null;
     return {
         init: function(){
@@ -33,11 +38,7 @@ var login = (function(){
                 });
             });
             // 手机号码验证
-            $phone.on('focus', function() {
-                $(this).parent().css('borderColor', '#ccc')
-                    $(this).parent().next().css("display", 'none')
-                           .html('');
-            });
+            $phone.on('focus', function() { self.focu($(this)) });
             $phone.on('blur', function() {
                 var reg = /^1[34578]\d{9}$/;
                 if(!reg.test($(this).val())){
@@ -48,6 +49,24 @@ var login = (function(){
                     }else {
                         $(this).parent().next().html('手机号码不正确');
                     }
+                }else {
+                    $(this).parent().next().html('正确');
+                }
+            });
+            // 邮箱验证
+            $mail.on('focus', function() { self.focu($(this)) });
+            $mail.on('blur', function() {
+                var reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+                if(!reg.test($(this).val())){
+                    $(this).parent().css('borderColor', '#FB948B')
+                    $(this).parent().next().css("display", 'block')
+                    if($(this).val() == ''){
+                        $(this).parent().next().html('请输入邮件地址');
+                    }else {
+                        $(this).parent().next().html('邮件地址不正确');
+                    }
+                }else {
+                    $(this).parent().next().html('正确');
                 }
             });
             // 验证按钮
@@ -90,14 +109,14 @@ var login = (function(){
             // 获取短信验证码
             $('.verify-code a').on('click', function() {
                 if(/^1[34578]\d{9}$/.test($phone.val())){
-                    if(!$(this).timer){
+                    if(!this.timer){
                         var count = 60;
-                        $(this).timer = setInterval(() => {
+                        this.timer = setInterval(() => {
                             $(this).html(`重新获取(${count})`);
                             count--;
                             if(count < 0){
-                                clearInterval($(this).timer);
-                                $(this).timer = null;
+                                clearInterval(this.timer);
+                                this.timer = null;
                                 $(this).html(`获取验证码`);
                             }
                         }, 1000)
@@ -106,11 +125,54 @@ var login = (function(){
                     $phone.blur();
                 } 
             });
+            $vCode.on('focus', function() {
+                self.focu($(this));
+            });
+            $vCode.on('blur', function() {
+                var $val = $(this).val();
+                if($val == ''){
+                    $(this).parent().next().css("display", 'block').html('验证码不能为空');
+                    $(this).parent().css('borderColor', '#FB948B');
+                }else {
+                    $(this).parent().next().html('正确');
+                }
+            });
+            // 获取邮件验证码
+            $('.mail-code a').on('click', function() {
+                var reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+                if(reg.test($mail.val())){
+                    if(!this.timer){
+                        var count = 60;
+                        this.timer = setInterval(() => {
+                            $(this).html(`重新获取(${count})`);
+                            count--;
+                            if(count < 0){
+                                clearInterval(this.timer);
+                                this.timer = null;
+                                $(this).html(`获取验证码`);
+                            }
+                        }, 1000)
+                    }
+                }else {
+                    $mail.blur();
+                } 
+            });
+            $mailCode.on('focus', function() {
+                self.focu($(this));
+            });
+            $mailCode.on('blur', function() {
+                var $val = $(this).val();
+                if($val == ''){
+                    $(this).parent().next().css("display", 'block').html('验证码不能为空');
+                    $(this).parent().css('borderColor', '#FB948B');
+                }else {
+                    $(this).parent().next().html('正确');
+                }
+            });
             // 密码验证
             $pwd.on('focus', function() {
                 $(this).next().css('display', 'block');
-                $(this).parent().next().css("display", 'none').html('');
-                $(this).parent().css('borderColor', '#ccc');
+                self.focu($(this));
             });
             $pwd.on('keyup', function() {
                 var $val = $(this).val();
@@ -158,15 +220,15 @@ var login = (function(){
                     $(this).parent().next().css('display', 'block').html('密码至少包含字母，数字，字符中的两种');
                     $(this).parent().css('borderColor', '#FB948B');
                     return;
+                }else {
+                    $(this).parent().next().html('正确');
                 }
             });
             // 再次输入密码
             $pwdAgain.on('focus', function() {
-                $(this).parent().next().css("display", 'none').html('');
-                $(this).parent().css('borderColor', '#ccc')
+                self.focu($(this));
             });
             $pwdAgain.on('blur', function() {
-                console.log(1);
                 var $pwdVal = $pwd.val();
                 var $va = $(this).val();
                 if($va == ''){
@@ -175,10 +237,61 @@ var login = (function(){
                 }else if($va != $pwdVal){
                     $(this).parent().next().css('display', 'block').html('两次输入密码不一致');
                     $(this).parent().css('borderColor', '#FB948B');
+                }else {
+                    $(this).parent().next().html('正确');
                 }
             });
+            // 提交
+            $subPhone.on('click', function(e) {
+                // 阻止默认行为
+                e.preventDefault();
+                var $hint = $('.hint');
+                if($hint.eq(0).html() != '正确'){
+                    $phone.blur();
+                    return;
+                }else if($hint.eq(1).html() != '正确'){
+                    $vCode.blur();
+                    return;
+                }else if($hint.eq(2).html() != '正确'){
+                    $pwd.blur();
+                    return;
+                }else if($hint.eq(3).html() != '正确'){
+                    $pwdAgain.blur();
+                    return;
+                }else {
+                    alert('注册成功');
+                }
+
+            });
+            $subMail.on('click', function(e) {
+                // 阻止默认行为
+                e.preventDefault();
+                var $hint = $('.hint');
+                if($hint.eq(0).html() != '正确'){
+                    $mail.blur();
+                    return;
+                }else if($hint.eq(1).html() != '正确'){
+                    $mailCode.blur();
+                    return;
+                }else if($hint.eq(2).html() != '正确'){
+                    $pwd.blur();
+                    return;
+                }else if($hint.eq(3).html() != '正确'){
+                    $pwdAgain.blur();
+                    return;
+                }else if($hint.eq(4).html() != '正确'){
+                    $phone.blur();
+                    return;
+                }else if($hint.eq(5).html() != '正确'){
+                    $vCode.blur();
+                    return;
+                }else {
+                    alert('注册成功');
+                }
+
+            });
         },
-        // 确认密码
+        // 密码验证
         verify(str){
             var reg = /^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{1,}$/;
             var spac = /\s/;
@@ -187,6 +300,11 @@ var login = (function(){
             obj.spac = spac.test(str)? false: true;
             obj.inc = reg.test(str)? true: false;
             return obj;
+        },
+        // 获取焦点
+        focu(obj){
+            obj.parent().next().css("display", 'none').html('');
+            obj.parent().css('borderColor', '#ccc');
         }
     }
 }());

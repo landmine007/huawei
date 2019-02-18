@@ -251,7 +251,7 @@
                     </div>
                     <!-- 邮件地址 -->
                     <div class="box">
-                        <div class="main">
+                        <div class="mail">
                             <label>邮件地址</label>
                             <input type="text" name="main" placeholder="请输入邮件地址">
                         </div>
@@ -272,7 +272,7 @@
                     </div>
                     <!-- 邮件验证码 -->
                     <div class="box">
-                        <div class="verify-code">
+                        <div class="mail-code">
                             <label>邮件验证码</label>
                             <input type="text" placeholder="请输入邮件验证码">
                             <a href="javascript:;">获取验证码</a>
@@ -335,7 +335,7 @@
                         <p class="hint"></p>
                     </div>
                     <!-- 注册按钮 -->
-                    <input type="submit" class="sub" placeholder="注册">
+                    <input type="submit" class="sub subMail" placeholder="注册">
                 </div>
             </form>
         </div>
@@ -353,6 +353,11 @@
             <p>Copyright &copy; 2011-2018 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9</p>
         </div>
     </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src='js/login.js'></script>
+    <script>
+        $(function(){ login.init(); });
+    </script>
 </body>
 
 </html>
