@@ -5,12 +5,14 @@ var login = (function(){
     var $phone = $('.phone input');
     var $verify = $('.verify');
     var $pwd = $('.pwd input');
+    var $pwdAgain = $('.pwd-again input');
     var timer = null;
     return {
         init: function(){
             this.event();
         },
         event(){
+            var self = this;
             //国家选择点击事件
             $selNation.on("click", function(){
                 var $ol = $(this).next();
@@ -39,7 +41,7 @@ var login = (function(){
             $phone.on('blur', function() {
                 var reg = /^1[34578]\d{9}$/;
                 if(!reg.test($(this).val())){
-                    $(this).parent().css('borderColor', 'red')
+                    $(this).parent().css('borderColor', '#FB948B')
                     $(this).parent().next().css("display", 'block')
                     if($(this).val() == ''){
                         $(this).parent().next().html('请输入手机号码');
@@ -108,15 +110,83 @@ var login = (function(){
             $pwd.on('focus', function() {
                 $(this).next().css('display', 'block');
                 $(this).parent().next().css("display", 'none').html('');
+                $(this).parent().css('borderColor', '#ccc');
             });
-            $pwd.on('change', function() {
-                var val = $(this).val();
-                var p = $(this).children('p');
-                console.log(p);
-                if(val.length >= 8){
-
+            $pwd.on('keyup', function() {
+                var $val = $(this).val();
+                var flag = self.verify($val);
+                var $i = $(this).next().find('i');
+                var $span = $(this).next().find('span');
+                if(flag.len){
+                    $i.eq(1).css('backgroundPosition', '-15px 0');
+                    $span.eq(1).css('color', '#41CE48');
+                }else{
+                    $i.eq(1).css('backgroundPosition', '-1px 0');
+                    $span.eq(1).css('color', '#7f7f7f');
+                }
+                if(flag.spac){
+                    $i.eq(0).css('backgroundPosition', '-15px 0');
+                    $span.eq(0).css('color', '#41CE48');
+                }else{
+                    $i.eq(0).css('backgroundPosition', '-1px 0');
+                    $span.eq(0).css('color', '#7f7f7f');
+                }
+                if(flag.inc){
+                    $i.eq(2).css('backgroundPosition', '-15px 0');
+                    $span.eq(2).css('color', '#41CE48');
+                }else{
+                    $i.eq(2).css('backgroundPosition', '-1px 0');
+                    $span.eq(2).css('color', '#7f7f7f');
                 }
             });
+            $pwd.on('blur', function() {
+                $(this).next().css('display', 'none');
+                var $val = $(this).val();
+                var flag = self.verify($val);
+                if($val == ''){
+                    $(this).parent().next().css('display', 'block').html('密码不能为空');
+                    $(this).parent().css('borderColor', '#FB948B');
+                }else if(!flag.spac){
+                    $(this).parent().next().css('display', 'block').html('密码不能包含空格');
+                    $(this).parent().css('borderColor', '#FB948B');
+                    return;
+                }else if(!flag.len){
+                    $(this).parent().next().css('display', 'block').html('密码必须大于8位');
+                    $(this).parent().css('borderColor', '#FB948B');
+                    return;
+                }else if(!flag.inc){
+                    $(this).parent().next().css('display', 'block').html('密码至少包含字母，数字，字符中的两种');
+                    $(this).parent().css('borderColor', '#FB948B');
+                    return;
+                }
+            });
+            // 再次输入密码
+            $pwdAgain.on('focus', function() {
+                $(this).parent().next().css("display", 'none').html('');
+                $(this).parent().css('borderColor', '#ccc')
+            });
+            $pwdAgain.on('blur', function() {
+                console.log(1);
+                var $pwdVal = $pwd.val();
+                var $va = $(this).val();
+                if($va == ''){
+                    $(this).parent().next().css('display', 'block').html('密码不能为空');
+                    $(this).parent().css('borderColor', '#FB948B');
+                }else if($va != $pwdVal){
+                    $(this).parent().next().css('display', 'block').html('两次输入密码不一致');
+                    $(this).parent().css('borderColor', '#FB948B');
+                }
+            });
+        },
+        // 确认密码
+        verify(str){
+            var reg = /^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{1,}$/;
+            var spac = /\s/;
+            var obj = {};
+            obj.len = str.length >= 8? true: false;
+            obj.spac = spac.test(str)? false: true;
+            obj.inc = reg.test(str)? true: false;
+            return obj;
         }
     }
 }());

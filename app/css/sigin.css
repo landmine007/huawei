@@ -125,7 +125,7 @@ body{
 .hint{
     line-height: 22px;
     margin-left: 10px;
-    color: red;
+    color: #ff3322;
 }
 /* 填写框 */
 .info .box input{
@@ -238,12 +238,12 @@ body{
 /* 获取短信验证码 */
 .verify-code a{
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 12px;
+    top: 1px;
     color: #007DFF;
     width: 90px;
-    height: 22px;
-    line-height: 22px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     background: #f7f7f7;
 }
