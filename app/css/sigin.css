@@ -76,58 +76,81 @@ body{
     background: #ffff;
     padding: 38px 0;
 }
-.info ul{
+.info .info-box{
     width: 424px;
     margin: 0 auto;
 }
-.info ul li{
-    height: 42px;
-    margin-bottom: 10px;
-    position: relative;
-}
-.info ul li.verify-btn{
-    width: 424px;
-    height: 42px;
-    line-height: 42px;
-    border: 1px  solid #ccc;
-    border-radius: 21px;
-    padding: 0 40px;
-    box-sizing: border-box;
-    background: #f7f7f7;
-}
-.info ul li.space{
+/* 空隙 */
+.info .space{
+    margin: 10px 0;
     height: 10px;
     background: #fff;
+    border: 0;
 }
-.info ul li label{
+/* 填写行 */
+.info .box{
+    margin-bottom: 10px;
+}
+.info .box>div{
+    width: 424px;
+    height: 42px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 21px;
+    font-size: 16px;
+}
+.info .box label{
     color: #333;
     float: left;
     width: 122px;
-    height: 41px;
-    line-height: 41px;
+    height: 42px;
+    line-height: 42px;
     text-align: justify;
-    border: 1px solid #ccc;
+    border-right: 1px solid #ccc;
     border-radius: 21px 0 0 21px;
     padding: 0 16px;
     background: #f7f7f7;
     box-sizing: border-box;
 }
-.info ul li label:after {
+.info .box label:after{
     content: " ";
     display: inline-block;
     width: 100%;
 }
-.info ul li div.sel-nation{
+.info .box .phone label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hint{
+    line-height: 22px;
+    margin-left: 10px;
+    color: red;
+}
+/* 填写框 */
+.info .box input{
     float: left;
     width: 302px;
     height:41px;
     line-height: 41px;
     padding: 0 20px;
     background: #f7f7f7;
-    border: 1px solid #ccc;
     border-left: 0;
     border-radius: 0 21px 21px 0;
     box-sizing: border-box;
+}
+/* 国家选择 */
+.sel-nation{
+    float: left;
+    width: 302px;
+    height:41px;
+    line-height: 41px;
+    padding: 0 40px 0 20px;
+    border-left: 0;
+    border-radius: 0 21px 21px 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f7f7f7 url('../images/triangle_green.png') no-repeat 270px 18px;
 }
 /* 国家列表 */
 .nation-list{
@@ -143,7 +166,7 @@ body{
     z-index: 10;
     display: none;
 }
-.info ol.nation-list li{
+.nation-list li{
     height: 30px;
     line-height: 30px;
     margin: 0;
@@ -151,72 +174,83 @@ body{
     border-bottom: 1px solid #e5e5e5;
     color: #333;
 }
-.info ol.nation-list li:hover{
+.nation-list li:hover{
     background: #cce5ff;
 }
-.sel-nation i{
+/* 验证按钮 */
+.verify div{
+    float: left;
+    width: 42px;
+    height: 42px;
+    position: relative;
+}
+.verify h2{
     position: absolute;
-    top: 16px;
-    right: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    background: url(../images/sprite.1.0.3.png) no-repeat 0 -161px;
+}
+.verify div p.blue{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 12px;
-    height: 6px;
-    background: url('../images/triangle_green.png') no-repeat;
+    height:12px;
+    background: url("../images/step_blue.png") no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
 }
-.tele label i{
-    float: right;
-    width: 12px;
-    height: 6px;
-    background: url('../images/triangle_gray.png') no-repeat;
-    margin-top: 16px;
+.verify div p.gray{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    background: #c5daf9 url("../images/step_gray.png") no-repeat;
+    background-size: 100% 100%;
 }
-.tele label span{
+.verify{
+    background: linear-gradient(#f1f1f1, #fefefe);
+    line-height: 42px;
+    cursor: pointer;
+}
+.verify:hover{
+    background: linear-gradient(#fefefe, #f1f1f1);
+}
+.verify span{
     float: left;
-    width: 70px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
 }
-.info ul li input{
-    float: left;
-    width: 302px;
-    height:41px;
-    line-height: 41px;
-    padding: 0 20px;
-    background: #f7f7f7;
-    border: 1px solid #ccc;
-    border-left: 0;
-    border-radius: 0 21px 21px 0;
-    box-sizing: border-box;
-}
-.info ul li.verify input{
-    padding-right: 100px;
-}
-/* 获取验证码按钮 */
-.verify button{
+/* 获取短信验证码 */
+.verify-code a{
     position: absolute;
     right: 10px;
     top: 10px;
     color: #007DFF;
-    width: 86px;
+    width: 90px;
     height: 22px;
     line-height: 22px;
-    border: 0;
-    padding: 0;
-    background: #f7f7f7;
-    outline: none;
-}
-.login-btn a{
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    background: #b40707;
-    border-radius: 20px;
     text-align: center;
-    color: #fff;
-    margin: 20px auto 0;
+    background: #f7f7f7;
 }
-/* 密码验证 */
+.info div.verify-code input{
+    padding-right: 100px;
+}
+/* 密码验证提示 */
 .verify-pwd{
     position: absolute;
     bottom: 55px;
@@ -230,6 +264,7 @@ body{
     margin: auto;
     padding: 20px 30px;
     box-sizing: border-box;
+    font-size: 12px;
     display: none;
 }
 .verify-pwd h3{
@@ -262,6 +297,18 @@ body{
     border: 8px solid transparent;
     border-bottom: 0;
     border-top-color: #fff;
+}
+/* 注册按钮 */
+.sub{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #b40707;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 30px auto 10px;
 }
 /* 底部 */
 .footer-inner{

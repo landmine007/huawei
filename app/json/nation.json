@@ -1,0 +1,1154 @@
+[
+    {
+        "name": "Angola",
+        "abbreviation": "AO",
+        "nation": "安哥拉",
+        "code": "244"
+    },
+    {
+        "name": "Afghanistan",
+        "abbreviation": "AF",
+        "nation": "阿富汗",
+        "code": "93"
+    },
+    {
+        "name": "Albania",
+        "abbreviation": "AL",
+        "nation": "阿尔巴尼亚",
+        "code": "355"
+    },
+    {
+        "name": "Algeria",
+        "abbreviation": "DZ",
+        "nation": "阿尔及利亚",
+        "code": "213"
+    },
+    {
+        "name": "Andorra",
+        "abbreviation": "AD",
+        "nation": "安道尔共和国",
+        "code": "376"
+    },
+    {
+        "name": "Anguilla",
+        "abbreviation": "AI",
+        "nation": "安圭拉岛",
+        "code": "1264"
+    },
+    {
+        "name": "Antigua and Barbuda",
+        "abbreviation": "AG",
+        "nation": "安提瓜和巴布达",
+        "code": "1268"
+    },
+    {
+        "name": "Argentina",
+        "abbreviation": "AR",
+        "nation": "阿根廷",
+        "code": "54"
+    },
+    {
+        "name": "Armenia",
+        "abbreviation": "AM",
+        "nation": "亚美尼亚",
+        "code": "374"
+    },
+    {
+        "name": "Ascension",
+        "abbreviation": "AC",
+        "nation": "阿森松",
+        "code": "247"
+    },
+    {
+        "name": "Australia",
+        "abbreviation": "AU",
+        "nation": "澳大利亚",
+        "code": "61"
+    },
+    {
+        "name": "Austria",
+        "abbreviation": "AT",
+        "nation": "奥地利",
+        "code": "43"
+    },
+    {
+        "name": "Azerbaijan",
+        "abbreviation": "AZ",
+        "nation": "阿塞拜疆",
+        "code": "994"
+    },
+    {
+        "name": "Bahamas",
+        "abbreviation": "BS",
+        "nation": "巴哈马",
+        "code": "1242"
+    },
+    {
+        "name": "Bahrain",
+        "abbreviation": "BH",
+        "nation": "巴林",
+        "code": "973"
+    },
+    {
+        "name": "Bangladesh",
+        "abbreviation": "BD",
+        "nation": "孟加拉国",
+        "code": "880"
+    },
+    {
+        "name": "Barbados",
+        "abbreviation": "BB",
+        "nation": "巴巴多斯",
+        "code": "1246"
+    },
+    {
+        "name": "Belarus",
+        "abbreviation": "BY",
+        "nation": "白俄罗斯",
+        "code": "375"
+    },
+    {
+        "name": "Belgium",
+        "abbreviation": "BE",
+        "nation": "比利时",
+        "code": "32"
+    },
+    {
+        "name": "Belize",
+        "abbreviation": "BZ",
+        "nation": "伯利兹",
+        "code": "501"
+    },
+    {
+        "name": "Benin",
+        "abbreviation": "BJ",
+        "nation": "贝宁",
+        "code": "229"
+    },
+    {
+        "name": "Bermuda Is.",
+        "abbreviation": "BM",
+        "nation": "百慕大群岛",
+        "code": "1441"
+    },
+    {
+        "name": "Bolivia",
+        "abbreviation": "BO",
+        "nation": "玻利维亚",
+        "code": "591"
+    },
+    {
+        "name": "Botswana",
+        "abbreviation": "BW",
+        "nation": "博茨瓦纳",
+        "code": "267"
+    },
+    {
+        "name": "Brazil",
+        "abbreviation": "BR",
+        "nation": "巴西",
+        "code": "55"
+    },
+    {
+        "name": "Brunei",
+        "abbreviation": "BN",
+        "nation": "文莱",
+        "code": "673"
+    },
+    {
+        "name": "Bulgaria",
+        "abbreviation": "BG",
+        "nation": "保加利亚",
+        "code": "359"
+    },
+    {
+        "name": "Burkina-faso",
+        "abbreviation": "BF",
+        "nation": "布基纳法索",
+        "code": "226"
+    },
+    {
+        "name": "Burma",
+        "abbreviation": "MM",
+        "nation": "缅甸",
+        "code": "95"
+    },
+    {
+        "name": "Burundi",
+        "abbreviation": "BI",
+        "nation": "布隆迪",
+        "code": "257"
+    },
+    {
+        "name": "Cameroon",
+        "abbreviation": "CM",
+        "nation": "喀麦隆",
+        "code": "237"
+    },
+    {
+        "name": "Canada",
+        "abbreviation": "CA",
+        "nation": "加拿大",
+        "code": "1"
+    },
+    {
+        "name": "Cayman Is.",
+        "abbreviation": "KY",
+        "nation": "开曼群岛",
+        "code": "1345"
+    },
+    {
+        "name": "Central African Republic",
+        "abbreviation": "CF",
+        "nation": "中非共和国",
+        "code": "236"
+    },
+    {
+        "name": "Chad",
+        "abbreviation": "TD",
+        "nation": "乍得",
+        "code": "235"
+    },
+    {
+        "name": "Chile",
+        "abbreviation": "CL",
+        "nation": "智利",
+        "code": "56"
+    },
+    {
+        "name": "China",
+        "abbreviation": "CN",
+        "nation": "中国",
+        "code": "86"
+    },
+    {
+        "name": "Colombia",
+        "abbreviation": "CO",
+        "nation": "哥伦比亚",
+        "code": "57"
+    },
+    {
+        "name": "Congo",
+        "abbreviation": "CG",
+        "nation": "刚果",
+        "code": "242"
+    },
+    {
+        "name": "Cook Is.",
+        "abbreviation": "CK",
+        "nation": "库克群岛",
+        "code": "682"
+    },
+    {
+        "name": "Costa Rica",
+        "abbreviation": "CR",
+        "nation": "哥斯达黎加",
+        "code": "506"
+    },
+    {
+        "name": "Cuba",
+        "abbreviation": "CU",
+        "nation": "古巴",
+        "code": "53"
+    },
+    {
+        "name": "Cyprus",
+        "abbreviation": "CY",
+        "nation": "塞浦路斯",
+        "code": "357"
+    },
+    {
+        "name": "Czech Republic",
+        "abbreviation": "CZ",
+        "nation": "捷克",
+        "code": "420"
+    },
+    {
+        "name": "Denmark",
+        "abbreviation": "DK",
+        "nation": "丹麦",
+        "code": "45"
+    },
+    {
+        "name": "Djibouti",
+        "abbreviation": "DJ",
+        "nation": "吉布提",
+        "code": "253"
+    },
+    {
+        "name": "Dominica Rep.",
+        "abbreviation": "DO",
+        "nation": "多米尼加共和国",
+        "code": "1890"
+    },
+    {
+        "name": "Ecuador",
+        "abbreviation": "EC",
+        "nation": "厄瓜多尔",
+        "code": "593"
+    },
+    {
+        "name": "Egypt",
+        "abbreviation": "EG",
+        "nation": "埃及",
+        "code": "20"
+    },
+    {
+        "name": "EI Salvador",
+        "abbreviation": "SV",
+        "nation": "萨尔瓦多",
+        "code": "503"
+    },
+    {
+        "name": "Estonia",
+        "abbreviation": "EE",
+        "nation": "爱沙尼亚",
+        "code": "372"
+    },
+    {
+        "name": "Ethiopia",
+        "abbreviation": "ET",
+        "nation": "埃塞俄比亚",
+        "code": "251"
+    },
+    {
+        "name": "Fiji",
+        "abbreviation": "FJ",
+        "nation": "斐济",
+        "code": "679"
+    },
+    {
+        "name": "Finland",
+        "abbreviation": "FI",
+        "nation": "芬兰",
+        "code": "358"
+    },
+    {
+        "name": "France",
+        "abbreviation": "FR",
+        "nation": "法国",
+        "code": "33"
+    },
+    {
+        "name": "French Guiana",
+        "abbreviation": "GF",
+        "nation": "法属圭亚那",
+        "code": "594"
+    },
+    {
+        "name": "Gabon",
+        "abbreviation": "GA",
+        "nation": "加蓬",
+        "code": "241"
+    },
+    {
+        "name": "Gambia",
+        "abbreviation": "GM",
+        "nation": "冈比亚",
+        "code": "220"
+    },
+    {
+        "name": "Georgia",
+        "abbreviation": "GE",
+        "nation": "格鲁吉亚",
+        "code": "995"
+    },
+    {
+        "name": "Germany",
+        "abbreviation": "DE",
+        "nation": "德国",
+        "code": "49"
+    },
+    {
+        "name": "Ghana",
+        "abbreviation": "GH",
+        "nation": "加纳",
+        "code": "233"
+    },
+    {
+        "name": "Gibraltar",
+        "abbreviation": "GI",
+        "nation": "直布罗陀",
+        "code": "350"
+    },
+    {
+        "name": "Greece",
+        "abbreviation": "GR",
+        "nation": "希腊",
+        "code": "30"
+    },
+    {
+        "name": "Grenada",
+        "abbreviation": "GD",
+        "nation": "格林纳达",
+        "code": "1809"
+    },
+    {
+        "name": "Guam",
+        "abbreviation": "GU",
+        "nation": "关岛",
+        "code": "1671"
+    },
+    {
+        "name": "Guatemala",
+        "abbreviation": "GT",
+        "nation": "危地马拉",
+        "code": "502"
+    },
+    {
+        "name": "Guinea",
+        "abbreviation": "GN",
+        "nation": "几内亚",
+        "code": "224"
+    },
+    {
+        "name": "Guyana",
+        "abbreviation": "GY",
+        "nation": "圭亚那",
+        "code": "592"
+    },
+    {
+        "name": "Haiti",
+        "abbreviation": "HT",
+        "nation": "海地",
+        "code": "509"
+    },
+    {
+        "name": "Honduras",
+        "abbreviation": "HN",
+        "nation": "洪都拉斯",
+        "code": "504"
+    },
+    {
+        "name": "Hongkong",
+        "abbreviation": "HK",
+        "nation": "中国香港",
+        "code": "852"
+    },
+    {
+        "name": "Hungary",
+        "abbreviation": "HU",
+        "nation": "匈牙利",
+        "code": "36"
+    },
+    {
+        "name": "Iceland",
+        "abbreviation": "IS",
+        "nation": "冰岛",
+        "code": "354"
+    },
+    {
+        "name": "India",
+        "abbreviation": "IN",
+        "nation": "印度",
+        "code": "91"
+    },
+    {
+        "name": "Indonesia",
+        "abbreviation": "ID",
+        "nation": "印度尼西亚",
+        "code": "62"
+    },
+    {
+        "name": "Iran",
+        "abbreviation": "IR",
+        "nation": "伊朗",
+        "code": "98"
+    },
+    {
+        "name": "Iraq",
+        "abbreviation": "IQ",
+        "nation": "伊拉克",
+        "code": "964"
+    },
+    {
+        "name": "Ireland",
+        "abbreviation": "IE",
+        "nation": "爱尔兰",
+        "code": "353"
+    },
+    {
+        "name": "Israel",
+        "abbreviation": "IL",
+        "nation": "以色列",
+        "code": "972"
+    },
+    {
+        "name": "Italy",
+        "abbreviation": "IT",
+        "nation": "意大利",
+        "code": "39"
+    },
+    {
+        "name": "Ivory Coast",
+        "abbreviation": "KT",
+        "nation": "科特迪瓦",
+        "code": "225"
+    },
+    {
+        "name": "Jamaica",
+        "abbreviation": "JM",
+        "nation": "牙买加",
+        "code": "1876"
+    },
+    {
+        "name": "Japan",
+        "abbreviation": "JP",
+        "nation": "日本",
+        "code": "81"
+    },
+    {
+        "name": "Jordan",
+        "abbreviation": "JO",
+        "nation": "约旦",
+        "code": "962"
+    },
+    {
+        "name": "Kampuchea (Cambodia )",
+        "abbreviation": "KH",
+        "nation": "柬埔寨",
+        "code": "855"
+    },
+    {
+        "name": "Kazakstan",
+        "abbreviation": "KZ",
+        "nation": "哈萨克斯坦",
+        "code": "327"
+    },
+    {
+        "name": "Kenya",
+        "abbreviation": "KE",
+        "nation": "肯尼亚",
+        "code": "254"
+    },
+    {
+        "name": "Korea",
+        "abbreviation": "KR",
+        "nation": "韩国",
+        "code": "82"
+    },
+    {
+        "name": "Kuwait",
+        "abbreviation": "KW",
+        "nation": "科威特",
+        "code": "965"
+    },
+    {
+        "name": "Kyrgyzstan",
+        "abbreviation": "KG",
+        "nation": "吉尔吉斯坦",
+        "code": "331"
+    },
+    {
+        "name": "Laos",
+        "abbreviation": "LA",
+        "nation": "老挝",
+        "code": "856"
+    },
+    {
+        "name": "Latvia",
+        "abbreviation": "LV",
+        "nation": "拉脱维亚",
+        "code": "371"
+    },
+    {
+        "name": "Lebanon",
+        "abbreviation": "LB",
+        "nation": "黎巴嫩",
+        "code": "961"
+    },
+    {
+        "name": "Lesotho",
+        "abbreviation": "LS",
+        "nation": "莱索托",
+        "code": "266"
+    },
+    {
+        "name": "Liberia",
+        "abbreviation": "LR",
+        "nation": "利比里亚",
+        "code": "231"
+    },
+    {
+        "name": "Libya",
+        "abbreviation": "LY",
+        "nation": "利比亚",
+        "code": "218"
+    },
+    {
+        "name": "Liechtenstein",
+        "abbreviation": "LI",
+        "nation": "列支敦士登",
+        "code": "423"
+    },
+    {
+        "name": "Lithuania",
+        "abbreviation": "LT",
+        "nation": "立陶宛",
+        "code": "370"
+    },
+    {
+        "name": "Luxembourg",
+        "abbreviation": "LU",
+        "nation": "卢森堡",
+        "code": "352"
+    },
+    {
+        "name": "Macao",
+        "abbreviation": "MO",
+        "nation": "中国澳门",
+        "code": "853"
+    },
+    {
+        "name": "Madagascar",
+        "abbreviation": "MG",
+        "nation": "马达加斯加",
+        "code": "261"
+    },
+    {
+        "name": "Malawi",
+        "abbreviation": "MW",
+        "nation": "马拉维",
+        "code": "265"
+    },
+    {
+        "name": "Malaysia",
+        "abbreviation": "MY",
+        "nation": "马来西亚",
+        "code": "60"
+    },
+    {
+        "name": "Maldives",
+        "abbreviation": "MV",
+        "nation": "马尔代夫",
+        "code": "960"
+    },
+    {
+        "name": "Mali",
+        "abbreviation": "ML",
+        "nation": "马里",
+        "code": "223"
+    },
+    {
+        "name": "Malta",
+        "abbreviation": "MT",
+        "nation": "马耳他",
+        "code": "356"
+    },
+    {
+        "name": "Mariana Is",
+        "abbreviation": "MP",
+        "nation": "马里亚那群岛",
+        "code": "1670"
+    },
+    {
+        "name": "Martinique",
+        "abbreviation": "MQ",
+        "nation": "马提尼克",
+        "code": "596"
+    },
+    {
+        "name": "Mauritius",
+        "abbreviation": "MU",
+        "nation": "毛里求斯",
+        "code": "230"
+    },
+    {
+        "name": "Mexico",
+        "abbreviation": "MX",
+        "nation": "墨西哥",
+        "code": "52"
+    },
+    {
+        "name": "Moldova",
+        "abbreviation": "MD",
+        "nation": "摩尔多瓦",
+        "code": "373"
+    },
+    {
+        "name": " Republic of",
+        "abbreviation": "MC",
+        "nation": "摩纳哥",
+        "code": "377"
+    },
+    {
+        "name": "Monaco",
+        "abbreviation": "MN",
+        "nation": "蒙古",
+        "code": "976"
+    },
+    {
+        "name": "Mongolia",
+        "abbreviation": "MS",
+        "nation": "蒙特塞拉特岛",
+        "code": "1664"
+    },
+    {
+        "name": "Montserrat Is",
+        "abbreviation": "MA",
+        "nation": "摩洛哥",
+        "code": "212"
+    },
+    {
+        "name": "Morocco",
+        "abbreviation": "MZ",
+        "nation": "莫桑比克",
+        "code": "258"
+    },
+    {
+        "name": "Mozambique",
+        "abbreviation": "NA",
+        "nation": "纳米比亚",
+        "code": "264"
+    },
+    {
+        "name": "Namibia",
+        "abbreviation": "NR",
+        "nation": "瑙鲁",
+        "code": "674"
+    },
+    {
+        "name": "Nauru",
+        "abbreviation": "NP",
+        "nation": "尼泊尔",
+        "code": "977"
+    },
+    {
+        "name": "Nepal",
+        "abbreviation": "AHO",
+        "nation": "荷属安的列斯",
+        "code": "599"
+    },
+    {
+        "name": "Netheriands Antilles",
+        "abbreviation": "NL",
+        "nation": "荷兰",
+        "code": "31"
+    },
+    {
+        "name": "Netherlands",
+        "abbreviation": "NZ",
+        "nation": "新西兰",
+        "code": "64"
+    },
+    {
+        "name": "New Zealand",
+        "abbreviation": "NI",
+        "nation": "尼加拉瓜",
+        "code": "505"
+    },
+    {
+        "name": "Nicaragua",
+        "abbreviation": "NE",
+        "nation": "尼日尔",
+        "code": "227"
+    },
+    {
+        "name": "Niger",
+        "abbreviation": "NG",
+        "nation": "尼日利亚",
+        "code": "234"
+    },
+    {
+        "name": "Nigeria",
+        "abbreviation": "KP",
+        "nation": "朝鲜",
+        "code": "850"
+    },
+    {
+        "name": "North Korea",
+        "abbreviation": "NO",
+        "nation": "挪威",
+        "code": "47"
+    },
+    {
+        "name": "Norway",
+        "abbreviation": "OM",
+        "nation": "阿曼",
+        "code": "968"
+    },
+    {
+        "name": "Oman",
+        "abbreviation": "PK",
+        "nation": "巴基斯坦",
+        "code": "92"
+    },
+    {
+        "name": "Pakistan",
+        "abbreviation": "PA",
+        "nation": "巴拿马",
+        "code": "507"
+    },
+    {
+        "name": "Panama",
+        "abbreviation": "PG",
+        "nation": "巴布亚新几内亚",
+        "code": "675"
+    },
+    {
+        "name": "Papua New Cuinea",
+        "abbreviation": "PY",
+        "nation": "巴拉圭",
+        "code": "595"
+    },
+    {
+        "name": "Paraguay",
+        "abbreviation": "PE",
+        "nation": "秘鲁",
+        "code": "51"
+    },
+    {
+        "name": "Peru",
+        "abbreviation": "PH",
+        "nation": "菲律宾",
+        "code": "63"
+    },
+    {
+        "name": "Philippines",
+        "abbreviation": "PL",
+        "nation": "波兰",
+        "code": "48"
+    },
+    {
+        "name": "Poland",
+        "abbreviation": "PF",
+        "nation": "法属玻利尼西亚",
+        "code": "689"
+    },
+    {
+        "name": "French Polynesia",
+        "abbreviation": "PT",
+        "nation": "葡萄牙",
+        "code": "351"
+    },
+    {
+        "name": "Portugal",
+        "abbreviation": "PR",
+        "nation": "波多黎各",
+        "code": "1787"
+    },
+    {
+        "name": "Puerto Rico",
+        "abbreviation": "QA",
+        "nation": "卡塔尔",
+        "code": "974"
+    },
+    {
+        "name": "Qatar",
+        "abbreviation": "RN",
+        "nation": "留尼旺",
+        "code": "262"
+    },
+    {
+        "name": "Reunion",
+        "abbreviation": "RO",
+        "nation": "罗马尼亚",
+        "code": "40"
+    },
+    {
+        "name": "Romania",
+        "abbreviation": "RU",
+        "nation": "俄罗斯",
+        "code": "7"
+    },
+    {
+        "name": "Russia",
+        "abbreviation": "LC",
+        "nation": "圣卢西亚",
+        "code": "1758"
+    },
+    {
+        "name": "Saint Lueia",
+        "abbreviation": "VC",
+        "nation": "圣文森特岛",
+        "code": "1784"
+    },
+    {
+        "name": "Saint Vincent",
+        "abbreviation": "SE",
+        "nation": "东萨摩亚(美)",
+        "code": "684"
+    },
+    {
+        "name": "Samoa Eastern",
+        "abbreviation": "WS",
+        "nation": "西萨摩亚",
+        "code": "685"
+    },
+    {
+        "name": "Samoa Western",
+        "abbreviation": "SM",
+        "nation": "圣马力诺",
+        "code": "378"
+    },
+    {
+        "name": "San Marino",
+        "abbreviation": "ST",
+        "nation": "圣多美和普林西比",
+        "code": "239"
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "abbreviation": "SA",
+        "nation": "沙特阿拉伯",
+        "code": "966"
+    },
+    {
+        "name": "Saudi Arabia",
+        "abbreviation": "SN",
+        "nation": "塞内加尔",
+        "code": "221"
+    },
+    {
+        "name": "Senegal",
+        "abbreviation": "SC",
+        "nation": "塞舌尔",
+        "code": "248"
+    },
+    {
+        "name": "Seychelles",
+        "abbreviation": "SL",
+        "nation": "塞拉利昂",
+        "code": "232"
+    },
+    {
+        "name": "Sierra Leone",
+        "abbreviation": "SG",
+        "nation": "新加坡",
+        "code": "65"
+    },
+    {
+        "name": "Singapore",
+        "abbreviation": "SK",
+        "nation": "斯洛伐克",
+        "code": "421"
+    },
+    {
+        "name": "Slovakia",
+        "abbreviation": "SI",
+        "nation": "斯洛文尼亚",
+        "code": "386"
+    },
+    {
+        "name": "Slovenia",
+        "abbreviation": "SB",
+        "nation": "所罗门群岛",
+        "code": "677"
+    },
+    {
+        "name": "Solomon Is",
+        "abbreviation": "SO",
+        "nation": "索马里",
+        "code": "252"
+    },
+    {
+        "name": "Somali",
+        "abbreviation": "ZA",
+        "nation": "南非",
+        "code": "27"
+    },
+    {
+        "name": "South Africa",
+        "abbreviation": "ES",
+        "nation": "西班牙",
+        "code": "34"
+    },
+    {
+        "name": "Spain",
+        "abbreviation": "LK",
+        "nation": "斯里兰卡",
+        "code": "94"
+    },
+    {
+        "name": "Sri Lanka",
+        "abbreviation": "LC",
+        "nation": "圣卢西亚",
+        "code": "1758"
+    },
+    {
+        "name": "St.Lucia",
+        "abbreviation": "VC",
+        "nation": "圣文森特",
+        "code": "1784"
+    },
+    {
+        "name": "St.Vincent",
+        "abbreviation": "SD",
+        "nation": "苏丹",
+        "code": "249"
+    },
+    {
+        "name": "Sudan",
+        "abbreviation": "SR",
+        "nation": "苏里南",
+        "code": "597"
+    },
+    {
+        "name": "Suriname",
+        "abbreviation": "SZ",
+        "nation": "斯威士兰",
+        "code": "268"
+    },
+    {
+        "name": "Swaziland",
+        "abbreviation": "SE",
+        "nation": "瑞典",
+        "code": "46"
+    },
+    {
+        "name": "Sweden",
+        "abbreviation": "CH",
+        "nation": "瑞士",
+        "code": "41"
+    },
+    {
+        "name": "Switzerland",
+        "abbreviation": "SY",
+        "nation": "叙利亚",
+        "code": "963"
+    },
+    {
+        "name": "Syria",
+        "abbreviation": "TW",
+        "nation": "中国台湾省",
+        "code": "886"
+    },
+    {
+        "name": "Taiwan",
+        "abbreviation": "TJ",
+        "nation": "塔吉克斯坦",
+        "code": "992"
+    },
+    {
+        "name": "Tajikstan",
+        "abbreviation": "TZ",
+        "nation": "坦桑尼亚",
+        "code": "255"
+    },
+    {
+        "name": "Tanzania",
+        "abbreviation": "TH",
+        "nation": "泰国",
+        "code": "66"
+    },
+    {
+        "name": "Thailand",
+        "abbreviation": "TG",
+        "nation": "多哥",
+        "code": "228"
+    },
+    {
+        "name": "Togo",
+        "abbreviation": "TO",
+        "nation": "汤加",
+        "code": "676"
+    },
+    {
+        "name": "Tonga",
+        "abbreviation": "TT",
+        "nation": "特立尼达和多巴哥",
+        "code": "1809"
+    },
+    {
+        "name": "Trinidad and Tobago",
+        "abbreviation": "TN",
+        "nation": "突尼斯",
+        "code": "216"
+    },
+    {
+        "name": "Tunisia",
+        "abbreviation": "TR",
+        "nation": "土耳其",
+        "code": "90"
+    },
+    {
+        "name": "Turkey",
+        "abbreviation": "TM",
+        "nation": "土库曼斯坦",
+        "code": "993"
+    },
+    {
+        "name": "Turkmenistan",
+        "abbreviation": "UG",
+        "nation": "乌干达",
+        "code": "256"
+    },
+    {
+        "name": "Uganda",
+        "abbreviation": "UA",
+        "nation": "乌克兰",
+        "code": "380"
+    },
+    {
+        "name": "Ukraine",
+        "abbreviation": "AE",
+        "nation": "阿拉伯联合酋长国",
+        "code": "971"
+    },
+    {
+        "name": "United Arab Emirates",
+        "abbreviation": "GB",
+        "nation": "英国",
+        "code": "44"
+    },
+    {
+        "name": "United Kiongdom",
+        "abbreviation": "US",
+        "nation": "美国",
+        "code": "1"
+    },
+    {
+        "name": "United States of America",
+        "abbreviation": "UY",
+        "nation": "乌拉圭",
+        "code": "598"
+    },
+    {
+        "name": "Uruguay",
+        "abbreviation": "UZ",
+        "nation": "乌兹别克斯坦",
+        "code": "233"
+    },
+    {
+        "name": "Uzbekistan",
+        "abbreviation": "VE",
+        "nation": "委内瑞拉",
+        "code": "58"
+    },
+    {
+        "name": "Venezuela",
+        "abbreviation": "VN",
+        "nation": "越南",
+        "code": "84"
+    },
+    {
+        "name": "Vietnam",
+        "abbreviation": "YE",
+        "nation": "也门",
+        "code": "967"
+    },
+    {
+        "name": "Yemen",
+        "abbreviation": "YU",
+        "nation": "南斯拉夫",
+        "code": "381"
+    },
+    {
+        "name": "Yugoslavia",
+        "abbreviation": "ZW",
+        "nation": "津巴布韦",
+        "code": "263"
+    },
+    {
+        "name": "Zimbabwe",
+        "abbreviation": "ZR",
+        "nation": "扎伊尔",
+        "code": "243"
+    },
+    {
+        "name": "Zaire",
+        "abbreviation": "ZM",
+        "nation": "赞比亚",
+        "code": "260"
+    }
+]
