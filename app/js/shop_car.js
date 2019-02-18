@@ -3,7 +3,7 @@ var shop_car = (function(){
 return{
     init(){
         this.getJson();
-       this.event();
+        this.event();
     },
      event(){
         var self = this;
@@ -12,8 +12,9 @@ return{
             var target = e.target || e.srcElement;
             if(target.nodeName === 'BUTTON') {
                 var index = target.parentNode.parentNode.getAttribute('index');
-                self.shopList.splice(index,1)
-                self.insertData(self.shopList)
+                self.shopList.splice(Number(index),1)
+                self.setData()
+                self.insertData(self.shopList);
             }
           },false)
           $box.onchange = function(e) {
@@ -22,6 +23,7 @@ return{
             if(target.nodeName === 'INPUT') {
                 var index = target.parentNode.parentNode.getAttribute('index');
                 self.shopList[index].count = target.value;
+                self.setData()
                 self.insertData(self.shopList);                
             }
         }
@@ -45,6 +47,9 @@ return{
                 </ul>`);
             }
             $box.innerHTML = $arr.join('');
+        },
+        setData() {
+            localStorage.shopList = JSON.stringify(this.shopList);
         }
     }
 }());

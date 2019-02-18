@@ -5,6 +5,7 @@ var shop=(function(){
     var allset_meal = document.querySelectorAll('.set_meal li')
     var allproduct = document.querySelectorAll('.product i')
     var $show_price =document.querySelectorAll('.price em')
+    var allstrong = document.querySelectorAll('.right h1 strong')
     var $prameter = document.querySelector('.parameter')
     var $version = document.querySelector('.version')
     var $set_meal = document.querySelector('.set_meal')
@@ -36,11 +37,11 @@ var shop=(function(){
                         allcolor[index].classList.add('current');
                     }
                     switch(index){
-                        case 0:allproduct[0].innerHTML="亮黑色";break;
-                        case 1:allproduct[0].innerHTML="樱粉金";break;
-                        case 2:allproduct[0].innerHTML="宝石蓝";break;
-                        case 3:allproduct[0].innerHTML="翡冷翠";break;
-                        case 4:allproduct[0].innerHTML="极光色";break;
+                        case 0:allproduct[0].innerHTML="亮黑色";allstrong[1].innerHTML="亮黑色";break;
+                        case 1:allproduct[0].innerHTML="樱粉金";allstrong[1].innerHTML="樱粉金";break;
+                        case 2:allproduct[0].innerHTML="宝石蓝";allstrong[1].innerHTML="宝石蓝";break;
+                        case 3:allproduct[0].innerHTML="翡冷翠";allstrong[1].innerHTML="翡冷翠";break;
+                        case 4:allproduct[0].innerHTML="极光色";allstrong[1].innerHTML="极光色";break;
                         default:break;
                     }
             },false)
@@ -55,8 +56,8 @@ var shop=(function(){
                     allversion[key].classList.add('current');
                 }
                 switch(key){
-                    case 0:allproduct[1].innerHTML="全网通 6+128GB";$show_price[1].innerHTML="3999";break;
-                    case 1:allproduct[1].innerHTML="全网通 6+128GB";$show_price[1].innerHTML="4499";break;
+                    case 0:allproduct[1].innerHTML="全网通 6+64GB";allstrong[0].innerHTML="全网通 6+64GB";$show_price[1].innerHTML="3999";break;
+                    case 1:allproduct[1].innerHTML="全网通 6+128GB";allstrong[0].innerHTML="全网通 6+128GB";$show_price[1].innerHTML="4499";break;
                 }
         },false) 
         $set_meal.addEventListener('click',function(e){
