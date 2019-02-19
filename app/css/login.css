@@ -1,0 +1,281 @@
+.content{
+	margin: 0 auto;
+	width: 1130px;
+}
+#header_wrapper{
+	background-color: #f7f7f7;
+    height: 67px;
+}
+.header{
+	padding: 0 66px;
+	width: 1068px;
+    height: 67px;
+    position: relative;
+	background-color: #f7f7f7;
+}
+.website-name{
+	color: #333;
+}
+/*网页主体*/
+#main_wrapper{
+	background-color: #081638;
+	height: 590px;
+}
+.main{
+	height: 590px;
+	background: url(../images/logo_bg.png);
+	background-size: cover;
+}
+.login-area-box{
+	margin-top: 30px;
+    margin-bottom: 30px;
+    height: 530px;
+    position: relative;
+    width: 380px;
+    float: right;
+    background-color: #FFFFFF;
+}
+.userAccountLogin{
+	width: 380px;
+	height: 303px;
+}
+.h{
+    width: 100%;
+    margin: 24px auto;
+    text-align: center;
+}
+.h span{
+    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+    cursor: pointer;
+    width: 169px;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.h span:hover{
+    color: #B40707;
+}
+.h span:first-child{
+    color: #B40707;
+}
+.h span:last-child{
+	border-left: 1px solid #cccccc;
+}
+.b-account{
+	width: 328px;
+    margin: 0 auto;
+}
+.userAccountLogin-errorTipsDiv{
+	font-size: 12px;
+    color: #ff3320;
+    min-height: 15px;
+    visibility: hidden;
+}
+.loginErrorInfo{
+	margin-right: 6px;
+	width: 13px;
+    height: 13px;
+    background-image: url(../images/btn_errorInfo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+.login-form-marginTop{
+	width: 328px;
+	height: 259px;
+}
+.login-form-marginTop table{
+	width: 100%;
+}
+.user-input-tr{
+	width: 100%;
+	border-bottom: 1px solid #cccccc;
+    height: 46px;
+}
+.lb_opacity_Class{
+	display: block;
+    position: absolute;
+    cursor: text;
+    float: left;
+    z-index: 2;
+    padding-left: 0px;
+}
+.text{
+	border: none;
+    background: transparent;
+    cursor: text;
+    color: rgb(204, 204, 204);
+    padding: 0;
+    margin: 0!important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 328px;
+    width: 100%;
+	font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 0px;
+}
+#userName{
+	width: 100%;
+	border: none;
+    color: #333333;
+    font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 0px;
+}
+#pwd{
+	width: 100%;
+	border: none;
+    color: #333333;
+    font-size: 14px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 0px;
+}
+#btn{
+	margin: 50px 0 30px;
+	background-color: #B40707;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #B40707;
+    color: #fff;
+    width: 100%;
+    line-height: 44px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 14px;
+    background-image: none;
+    cursor: pointer;
+    border-radius: 26px;
+    text-align: center;
+}
+.mt-links{
+	text-align: center;
+	padding: 0;
+}
+.mt-links-float{
+	text-align: center;
+	vertical-align: middle;
+}
+.regist{
+	padding-right: 10px;
+    border-right: 1px solid #cccccc;
+    text-align: right;
+}
+.mt-links-float a{
+	color: #007dff;
+}
+.mt-links-float a:hover{
+	color: blue;
+}
+.forgot{
+	padding-left: 10px;
+    text-align: left;
+}
+.thirdLoginBlock{
+	text-align: center;
+    position: absolute;
+    bottom: 0px;
+    color: #999;
+    line-height: 16px;
+}
+.thirdLintTitle{
+	position: relative;
+    width: 328px;
+    margin-bottom: 10px;
+}
+.line-left{
+	left: 0;
+	top: 50%;
+	background-image: url(../images/thirdLine.png);
+    background-repeat: no-repeat;
+    height: 1px;
+    position: absolute;
+    width: 94px;
+    background-size: cover;
+}
+.third-tips{
+	color: #cccccc;
+    vertical-align: middle;
+    text-align: center;
+    max-width: 190px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    padding: 0 10px;
+}
+.line-right{
+	right: 0;
+	bottom: 50%;
+	background-image: url(../images/thirdLine-reverse.png);
+    background-repeat: no-repeat;
+    height: 1px;
+    position: absolute;
+    width: 94px;
+    background-size: cover;
+}
+.thirdLoginDiv{
+	width: 328px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.thirdLoginDiv span{
+	padding: 0px 10px;
+    text-align: center;
+    display: inline-block;
+}
+.qqLogin_bigIco a{
+	background-image: url(../images/third_login.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    padding: 0px;
+    display: inline-block;
+    margin: 0;
+    float: none;
+    background-position: -72px -9px;
+}
+.qqLogin_bigIco a:hover{
+    background-position: -72px -55px;
+}
+.alipayLogin_bigIco a{
+	background-image: url(../images/third_login.png);
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    padding: 0px;
+    display: inline-block;
+    margin: 0;
+    float: none;
+    background-position: -132px -9px;
+}
+.alipayLogin_bigIco a:hover{
+    background-position: -132px -55px;
+}
+.weixinLogin_bigIco a{
+	background-image: url(../images/third_login.png);
+	background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    padding: 0px;
+    display: inline-block;
+    margin: 0;
+    float: none;
+    background-position: -12px -9px;
+}
+.weixinLogin_bigIco a:hover{
+    background-position: -12px -55px;
+}
+
+
+
