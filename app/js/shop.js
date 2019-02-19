@@ -83,12 +83,13 @@ var shop=(function(){
         var target = e.target || e.srcElement
         if(target.nodeName ==='BUTTON'){
             var obj ={};
+            obj.id = index+1;
             obj.color = allproduct[0].innerHTML
             obj.configure = allproduct[1].innerHTML
             obj.count = Number($count.value)
             obj.price = obj.count * ($show_price[1].innerHTML)
         }
-        self.setData(obj);
+        self.setData();
     }
         },
         setData(obj){
