@@ -10,7 +10,7 @@ var shop=(function(){
     var $version = document.querySelector('.version')
     var $set_meal = document.querySelector('.set_meal')
     var $count = document.querySelector('.count')
-    var index,key,repertory = 0;
+    var index = 0,key,repertory;
     return{
         init(){
             for(let i = 0; i <allcolor.length; i++) {
@@ -24,13 +24,13 @@ var shop=(function(){
             }
             this.event();
         },
-        event(){
+        event(){ 
             var self =this;
             $prameter.addEventListener('click',function(e){
                     e = e ||window.event;
                     var target = e.target||e.srcElement;
-                    if(target.nodeName === 'LI') {
-                        index = target.index;
+                    if(target.nodeName === 'IMG'||target.nodeName === 'I') {
+                        index = target.parentNode.index;
                         for(let i = 0; i < allcolor.length; i++) {
                             allcolor[i].classList.remove('current');
                         }
@@ -42,7 +42,6 @@ var shop=(function(){
                         case 2:allproduct[0].innerHTML="宝石蓝";allstrong[1].innerHTML="宝石蓝";break;
                         case 3:allproduct[0].innerHTML="翡冷翠";allstrong[1].innerHTML="翡冷翠";break;
                         case 4:allproduct[0].innerHTML="极光色";allstrong[1].innerHTML="极光色";break;
-                        default:break;
                     }
             },false)
             $version.addEventListener('click',function(e){
@@ -88,11 +87,6 @@ var shop=(function(){
             obj.configure = allproduct[1].innerHTML
             obj.count = Number($count.value)
             obj.price = obj.count * ($show_price[1].innerHTML)
-        }
-        self.setData();
-    }
-        },
-        setData(obj){
             var shopList = localStorage.getItem('shopList') || '[]';
             shopList = JSON.parse(shopList);
             for(var i = 0; i < shopList.length; i++) {
@@ -107,6 +101,8 @@ var shop=(function(){
             }
             localStorage.shopList = JSON.stringify(shopList); 
         }
+    }
+}      
 }           
 }())
 shop.init();

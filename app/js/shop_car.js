@@ -39,9 +39,10 @@ return{
             for(var i = 0; i < shopList.length; i++) {
                  var item = shopList[i];
                 $arr.push(`<ul index=${i}>
-                    <li><img src="images/pic${item.id}.png"</li>
-                   <li>&nbsp;华为mate 20&nbsp;${item.color}&nbsp;&nbsp;${item.configure}</li>
-                   <li>￥${item.price}.00</li>
+                    <li></li>
+                    <li><img src="images/pic${item.id}.png"></li>
+                    <li>&nbsp;华为mate 20&nbsp;${item.color}&nbsp;&nbsp;${item.configure}</li>
+                    <li>￥${item.price}.00</li>
                     <li><input class="shop_count" type="number" value="${item.count}"/></li>
                     <li>￥${item.price*item.count}.00</li>
                     <li><button class="btn shop-btn-del">删除</button></li>
