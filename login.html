@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/denglu.js"></script>
+
+	<body>
+		<!--网页头部-->
+		<div id="header_wrapper">
+			<div class="header content">
+				<div class="logo">
+					<img src="images/login_logo.png" />
+				</div>
+				<div class="website-name">
+					<b>|</b>
+					<b>华为商城</b>
+				</div>
+			</div>
+		</div>
+		<div style="background: #FFFBE4;display: block;height: 40px;text-align: center;line-height: 40px;color: #989898;">
+			<span class="prompt_icon" id="ad1">依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+		</div>
+		<!--网页主体-->
+		<div id="main_wrapper">
+			<div class="main content">
+				<div class="login-area-box">
+					<div class="userAccountLogin">
+						<div class="h">
+							<span>帐号登录</span><span>扫码登录</span>
+						</div>
+						<div class="b-account">
+							<div class="login-form-marginTop">
+								<div class="userAccountLogin-errorTipsDiv" id="errorTip">
+									<i class="loginErrorInfo "></i>
+								</div>
+								<form action="login.php" method="get">
+									<table border="0" cellpadding="0" cellspacing="0">
+										<tr>
+											<td class="user-input-tr">
+												<label class="lb_opacity_Class" for="userName">
+											<input type="text"class="text" placeholder="手机号/邮件地址/华为号">
+												</label>
+												<input class="ipt" type="text" name="uName" id="userName" maxlength="15" />
+											</td>
+										</tr>
+										<tr>
+											<td class="user-input-tr">
+												<label class="lb_opacity_Class" for="pwd">
+													<input type="password"class="text" placeholder="密码">
+												</label>
+												<input class="ipt" type="password" name="pwd" id="pwd" maxlength="32" />
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="submit" id="btn" />
+											</td>
+										</tr>
+										<tr>
+											<td class="mt-links">
+												<div class="mt-links-float">
+													<span class="regist"><a href="register.html">注册帐号</a></span>
+													<span class="forgot"><a href="#">忘记密码？</a></span>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<div class="thirdLoginBlock">
+								<div class="thirdLintTitle">
+									<i class="line-left"></i>
+									<span class="third-tips">其他方式登录</span>
+									<i class="line-right"></i>
+								</div>
+								<div class="thirdLoginDiv">
+									<span class="qqLogin_bigIco"><a href="#"></a></span>
+									<span class="alipayLogin_bigIco"><a href="#"></a></span>
+									<span class="weixinLogin_bigIco"><a href="#"></a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--网页尾部-->
+		<div id="footer_wrapper">
+			<div class="footer content">
+				<p>
+					<a href="#" class="rule">华为帐号用户协议</a>
+					<em>|</em>
+					<a href="#" class="rule">关于华为帐号与隐私的声明</a>
+					<em>|</em>
+					<a href="#" class="rule">常见问题</a>
+				</p>
+				<p class="copyrightPart">
+					Copyright © 2011-2018 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

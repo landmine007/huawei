@@ -1,0 +1,62 @@
+.box {
+	position: relative;
+}
+
+.big {
+	height: 450px;
+	width: 450px;
+}
+
+.big img {
+	position: absolute;
+	height: 450px;
+	width: 450px;
+	background-color: #fff;
+}
+
+ul {
+	position: absolute;
+	top: 450px;
+	left: 0;
+}
+
+li {
+	float: left;
+	padding: 0 5px;
+}
+
+li img {
+	width: 60px;
+	height: 60px;
+	border: 1px solid red;
+}
+
+.zoon {
+	height: 100px;
+	width: 100px;
+	background: rgba(89, 108, 162, 0.7);
+	border-radius: 6px;
+	opacity: 0.5;
+	position: absolute;
+	z-index: 99;
+}
+
+.big_r {
+	position: absolute;
+	top: 0;
+	left: 450px;
+	overflow: hidden;
+	width: 500px;
+	height: 500px;
+}
+
+.big_r img {
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	/*	display: none;*/
+}
