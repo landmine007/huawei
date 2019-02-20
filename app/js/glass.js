@@ -1,6 +1,6 @@
 $(function(){
 	var moveX,moveY;
-	$('.h ul li img').bind('click',change);
+	$('.h li img').bind('click',change);
 //	划片移动
 	$('.big img').bind('mousemove',zoon);
 	$('.zoon').bind('mousemove',zoon);
@@ -10,7 +10,7 @@ $(function(){
 	
 	function zoon(e){
 	if(e.pageY-50>=0 && e.pageY+50<=450){
-		moveY=e.pageY-100;}
+		moveY=e.pageY-50;}
 //		鼠标中间位置,边界处理
 		if(e.pageX-50>=0 && e.pageX+50<=450){
 		moveX=e.pageX-50;}
@@ -19,7 +19,7 @@ $(function(){
 	}
 //	切换小图片
 	function change(){
-	$(".h ul li img").css({borderColor:'#fff'});
+	$(".h li img").css({borderColor:'#fff'});
 	var $src=$(this).prop('src');
 	var $big_r=$src.split('ul_');
 //	console.log($big_r);
