@@ -23,7 +23,7 @@ return{
             if(target.nodeName === 'INPUT') {
                 var index = target.parentNode.parentNode.getAttribute('index');
                 self.shopList[index].count = target.value;
-                self.setData()
+                self.setData();
                 self.insertData(self.shopList);                
             }
         }
@@ -39,7 +39,7 @@ return{
             for(var i = 0; i < shopList.length; i++) {
                  var item = shopList[i];
                 $arr.push(`<ul index=${i}>
-                    <li></li>
+                    <li><input type="checkbox" class="inp" value="${Number(item.count)}"></li>
                     <li><img src="images/pic${item.id}.png"></li>
                     <li>&nbsp;华为mate 20&nbsp;${item.color}&nbsp;&nbsp;${item.configure}</li>
                     <li>￥${item.price}.00</li>
@@ -49,6 +49,7 @@ return{
                 </ul>`);
             }
             $box.innerHTML = $arr.join('');
+
         },
         setData() {
             localStorage.shopList = JSON.stringify(this.shopList);
