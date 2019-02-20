@@ -92,7 +92,7 @@ var shop=(function(){
             for(var i = 0; i < shopList.length; i++) {
                 var item = shopList[i];
                 if(item.configure == obj.configure && item.color == obj.color) {
-                    item.count += obj.count;
+                   item.count += obj.count;
                     break;
                 } 
             }
