@@ -37,8 +37,7 @@ img{
     margin:0 auto;
 }
 .current{
-    
-    border-color: #ca141d!important;
+    border-color: #f09a9e!important;
 }
 span{
     display: inline-block;
@@ -56,16 +55,40 @@ span{
 .list a{
    color:#666666;
 }
-.phone_list{
+.big{
     width:450px;
     height:450px;
     position:absolute;
     top:50px;
     left:0px;
 }
-.phone_list img{
+.big img{
     width:450px;
     height:450px;
+}
+.h{
+	position: absolute;
+	top: 510px;
+	left: 20px;
+}
+.h li {
+	float: left;
+	padding: 0 5px;
+}
+
+.h li img {
+	width: 60px;
+	height: 60px;
+}
+.zoon{
+	height: 100px;
+	width: 100px;
+	background:rgba(10, 10, 10, 0.7);
+    border-radius: 6px;
+	opacity: 0.5;
+    position: absolute;
+    left:0px;
+	z-index:99;
 }
 .right{
 width:670px;

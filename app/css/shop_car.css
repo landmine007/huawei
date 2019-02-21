@@ -212,6 +212,27 @@ background: #fff;
 .list_main ul li:nth-of-type(1) {
 	position:relative;
 }
+.stock{
+	width:22px;
+	float:left;
+}
+.stock:before{
+	content: "";
+	width: 1px;
+	height: 44px;
+	background: #e2e2e2;
+	float: left;
+}
+.stock a{
+	display: block;
+    font-size: 16px;
+    width: 22px;
+    height: 21px;
+    line-height: 22px;
+    text-align: center;
+    color: #777;
+    font-weight: 700;
+}
 .inp{
 	position:absolute;
 	top:40px;
@@ -223,12 +244,32 @@ background: #fff;
     width:450px;
     margin-left:0;
 }
+.list_main ul li:nth-of-type(5){
+    border: 1px solid #d6d6d6;
+    border-radius:2px;
+    width: 63px;
+	height: 44px;
+	margin-top:30px;
+	margin-left:50px;
+}
+.list_main ul li:nth-of-type(6){
+   color:red;
+}
 .list_main ul li img {
 	width:50px;
 	height:50px;
 	margin-top:30px;
 }
 .shop_count{
-	width:30px;
-	height:30px;
+	float: left;
+    width: 41px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+}
+.current2{
+	color: #c4c4c4!important;
+    cursor: not-allowed!important;
 }

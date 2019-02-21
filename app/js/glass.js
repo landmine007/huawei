@@ -1,6 +1,6 @@
 $(function(){
 	var moveX,moveY;
-	$('li img').bind('mouseover',change);
+	$('.h li img').bind('click',change);
 //	划片移动
 	$('.big img').bind('mousemove',zoon);
 	$('.zoon').bind('mousemove',zoon);
@@ -9,20 +9,17 @@ $(function(){
 //	$('.big_r').show();
 	
 	function zoon(e){
-	if(e.pageY-50>=0 && e.pageY+50<=450)
-		moveY=e.pageY-50;
+	if(e.pageY-50>=0 && e.pageY+50<=450){
+		moveY=e.pageY-50;}
 //		鼠标中间位置,边界处理
-		if(e.pageX-50>=0 && e.pageX+50<=450)
-		moveX=e.pageX-50;
+		if(e.pageX-50>=0 && e.pageX+50<=450){
+		moveX=e.pageX-50;}
 		$(".zoon").css({top:moveY,left:moveX});
-	$('.big_r img').css({top:-moveY*.9,left:-moveX*.9})
-		
-		
+	$('.big_r img').css({top:-moveY*.9,left:-moveX*.9})	
 	}
 //	切换小图片
 	function change(){
-	$("li img").css({borderColor:'#fff'});
-	$(this).css({borderColor:'red'});
+	$(".h li img").css({borderColor:'#fff'});
 	var $src=$(this).prop('src');
 	var $big_r=$src.split('ul_');
 //	console.log($big_r);
