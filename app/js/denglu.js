@@ -8,22 +8,28 @@ $(function(){
 		}
 	})
 	
-	var spaceReg = /\s/;
-	$("form").submit(function(){
-		var userNameVal = $("#userName").val();
-		var pwdNameVal = $("#pwd").val();
-		if (!spaceReg.test(userNameVal)  && userNameVal != "") {
-			if (!spaceReg.test(pwdNameVal)  && pwdNameVal != "") {
-				return true;
-			} else{
-				$(".userAccountLogin-errorTipsDiv").css("visibility","visible").html("<i class='loginErrorInfo'></i>请输入您的密码");
-				return false;
-			}
-		} else{
-			$(".userAccountLogin-errorTipsDiv").css("visibility","visible").html("<i class='loginErrorInfo'></i>请输入您的帐号");
+	$('#btn').on('click', function(){
+		$("form").submit(function(){
 			return false;
+		});
+		var obj = {};
+		obj.phone = $(".phone").val();
+		obj.password = $(".pwd").val();
+		console.log($("#userName"), obj);
+		var dom = $(".userAccountLogin-errorTipsDiv");
+		if(obj.phone == ''){
+			dom.css("visibility","visible").html("<i class='loginErrorInfo'></i>请输入您的帐号");
+		}else if(obj.password == ''){
+			dom.css("visibility","visible").html("<i class='loginErrorInfo'></i>请输入您的密码");
+		}else{
+			$.post('php/login.php', obj, function(data) {
+				if(data == '登陆成功'){
+					window.location.href = 'http://localhost:8888/huawei/app/'; 
+				}else {
+					dom.css("visibility","visible").html("<i class='loginErrorInfo'></i>账号或密码不正确，登录失败!");
+				}
+			})
 		}
-	})
-	
+	})	
 	
 })

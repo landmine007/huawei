@@ -2,6 +2,7 @@
 	margin: 0 auto;
 	width: 1130px;
 }
+/* 头部 */
 #header_wrapper{
 	background-color: #f7f7f7;
     height: 67px;
@@ -15,6 +16,14 @@
 }
 .website-name{
 	color: #333;
+}
+.notice{
+    background: #FFFBE4;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #989898;
 }
 /*网页主体*/
 #main_wrapper{
@@ -122,6 +131,7 @@
     height: 46px;
     line-height: 46px;
     border-radius: 0px;
+    color: #444;
 }
 #userName{
 	width: 100%;
